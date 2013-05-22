@@ -126,7 +126,7 @@ static BOOL _LCLNSLogger_showFunctionName = NO;
     _LCLNSLogger_showFunctionName = (_LCLNSLogger_ShowFunctionNames);
     
     // create and remember the logger instance
-    _LCLNSLogger_logger = LoggerInit();
+    _LCLNSLogger_logger = LoggerGetDefaultLogger();
     
     // get configuration options for the logger
     const BOOL logToConsole = (_LCLNSLogger_LogToConsole);
